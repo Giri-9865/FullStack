@@ -1,0 +1,54 @@
+.cart-empty-text {
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.table-container {
+  margin: auto;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.heading {
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.delete-bin {
+  border: none;
+  font-size: large;
+  cursor: pointer;
+}
+.delete-bin:hover {
+  background-color: #dbd7d7;
+}
+
+.checkout-btn {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  background-color: rgba(230, 180, 14, 0.908);
+  font-size: medium;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

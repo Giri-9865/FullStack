@@ -1,0 +1,216 @@
+.checkout-container {
+  display: flex;
+  background-color: #007bff;
+  min-height: 800px;
+  max-height: max-content;
+  border-radius: 10px;
+}
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.close-btn {
+  margin-left: 95%;
+  margin-top: 5px;
+  color: black;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: rgba(230, 180, 14, 0.908);
+  border: none;
+  cursor: pointer;
+}
+
+.address {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 50px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  width: 50%;
+  border-radius: 10px;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: xx-large;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.decor-line {
+  height: 5px;
+  width: 80%;
+  border-radius: 3px;
+  background-color: black;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.select-address {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+
+.address-list {
+  margin: 10px;
+  border: 1px solid rgb(182, 179, 179);
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.address-list:hover {
+  transform: scale(1.02);
+}
+
+.no-address {
+  font-size: larger;
+}
+
+.address-list input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 5px;
+}
+
+.addAddress-btn {
+  font-size: large;
+  padding-bottom: 30px;
+  border: none;
+  color: #007bff;
+  background-color: white;
+  cursor: pointer;
+}
+.addAddress-btn span {
+  font-size: x-large;
+}
+
+.addAddress-btn:hover {
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.address-form input,
+.save-btn {
+  margin: 8px;
+  width: 300px;
+  height: 30px;
+  border: 1px solid rgb(182, 179, 179);
+  border-radius: 5px;
+}
+
+.save-btn {
+  margin-bottom: 50px;
+  background-color: #007bff;
+  color: white;
+  height: 40px;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  color: black;
+  transition: 0.3s ease;
+}
+
+.placeOrder-btn-container {
+  margin-left: 70%;
+}
+.placeOrder-btn {
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: medium;
+  border: 1px solid rgb(182, 179, 179);
+  background-color: rgba(230, 180, 14, 0.908);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.placeOrder-btn:hover {
+  background-color: rgba(184, 143, 9, 0.908);
+  transition: 0.3s ease;
+}
+.checkout-summary {
+  display: flex;
+  position: absolute;
+  margin-top: 100px;
+  right: 50px;
+  padding: 20px;
+  flex-direction: column;
+  background-color: white;
+  height: max-content;
+  width: 40%;
+  border-radius: 10px;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.checkout-summary h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.checkout-img {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.order-container {
+  display: flex;
+  justify-content: center;
+}
+.order-data {
+  width: 70%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  background-color: rgb(222, 229, 233);
+  border-radius: 10px;
+}
+.details{
+  margin-right: 30px;
+  margin-left: 50px;
+}
+
+.details div {
+  padding: 5px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.checkout-summary .total-price {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 100px;
+  width: 80%;
+  font-size: larger;
+  color: green;
+}

@@ -1,0 +1,131 @@
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background-image: url("https://as2.ftcdn.net/v2/jpg/04/80/75/75/1000_F_480757522_6ac0acwBjJcqVlVo4OE5eErn3TBtUfk7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-bar {
+  width: 650px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  border: none;
+  background-color: white;
+}
+
+.search-input {
+  width: 600px;
+  margin-right: 10px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.search-input::placeholder {
+  font-size: large;
+  font-weight: 100;
+}
+
+.card-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.category {
+  width: 100%;
+  font-weight: 600;
+  margin: 0.75rem;
+  font-size: 35px;
+}
+
+hr {
+  width: 100%;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 70px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .search-input {
+    width: calc(100% - 50px);
+  }
+
+  .items {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .search-input {
+    width: calc(100% - 50px);
+  }
+
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .search-bar {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .search-input {
+    width: calc(100% - 40px);
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
